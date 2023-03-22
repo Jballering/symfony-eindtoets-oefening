@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DepartmentController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>Add department</h1>
+            {{ form_start(departmentForm, {'atty':{ 'novalidate':'novalidate'}}) }}
+            {{ form_widget(departmentForm) }}
+            {{ form_end(departmentForm) }}
+        </div>
+    </div>
+
+</div>
+{% endblock %}
